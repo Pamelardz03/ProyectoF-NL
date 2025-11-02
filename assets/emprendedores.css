@@ -41,8 +41,9 @@ header {
 main {
     grid-area: main;
     display: flex;
-    width: 100%;
+    width: 100vw;
     background-color: var(--white);
+    flex-direction: column;
 }
 
 footer {
@@ -108,7 +109,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-image: url(https://www.nl.gob.mx/sites/default/files/repositorio/Dependencias/Secretar%C3%ADa%20de%20Econom%C3%ADa/micrositios/hecho_nl/20250404_mercado_hecho_nl_18.jpg);
+    background-image: url('../images/palomiras.jpg');
     background-size: cover;
     background-position:  center;
     height: 250px;
@@ -159,4 +160,48 @@ footer {
     margin-left: 20px; 
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+
+@media (min-width: 1024px){
+    .grid-container {
+        grid-template-columns: 200px auto;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+    main {
+        grid-area: main;
+        display: flex;
+        width: 60%;
+        background-color: var(--white);
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: flex;  /* Mostrar el menú siempre */
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .menu li a {
+        color: var(--white);
+        padding: 0 12px;
+    }
+
+    .ri-menu-line {
+        display: none;  /* Ocultar ícono de hamburguesa */
+    }
+
+    #banner {
+        height: 400px; /* Banner más alto en escritorio */
+    }
+
+    .info {
+        font-size: 16px;
+    }
 }
