@@ -1,0 +1,39 @@
+:root {
+    --primary: #FF8400;
+    --secondary: #FFF5D3;
+    --hover: #CC6002;
+    --outline: #E6E6E6;
+    --text: #0E0E0E;
+    --muted: #666;
+    --bg: #FFFFFF;
+    --radius: 12px;
+    --gap: 12px;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, system-ui, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg)
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--outline);
+    background: var(--primary);
+    color: white;
+}
+
+.ri-menu-line {
+    font-size: 30px;
+}
+
+
+.LogoNL {
+    width: 90px;
+    height: auto;
+    text-align: center;
+}
