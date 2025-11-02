@@ -10,11 +10,42 @@
     --gap: 12px;
 }
 
-body {
+body{
     margin: 0;
+    background-color: #ffffff;
     font-family: Poppins, system-ui, Arial, sans-serif;
+    height: 100%;
     color: var(--text);
     background: var(--bg)
+}
+
+header {
+    grid-area: header;
+    background-color: #FF8400;
+    box-shadow: 1px .01px 10px black;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #FF8400;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: 150px auto 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
 }
 
 .topbar {
