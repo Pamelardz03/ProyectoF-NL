@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hecho en NL – Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="brand" href="index.html">Hecho en NL</a>
+        <nav class="nav" id="nav">
+            <a href="index.html" aria-current="page">Inicio</a>
+            <a href="productos-categoria.html">Productos por Categoría</a>
+            <a href="emprendedor.html">Emprendedor</a>
+        </nav>
+    </header>
+
+
+    <main class="wrap">
+        <section class="hero">
+            <h1>Talento local de Nuevo León</h1>
+            <form class="search" role="search">
+                <input type="search" placeholder="Buscar…" aria-label="Buscar" />
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+
+        <h2 class="h">Categorías</h2>
+        <section class="grid grid-2" id="home-cats">
+            <a class="tile" href="productos-categoria.html?c=alimentos">Alimentos</a>
+            <a class="tile" href="productos-categoria.html?c=moda">Moda</a>
+            <a class="tile" href="productos-categoria.html?c=artesania">Artesanía</a>
+            <a class="tile" href="productos-categoria.html?c=tecnologia">Tecnología</a>
+        </section>
+
+
+        <h2 class="h">Productos recientes</h2>
+        <section class="grid grid-2" id="home-products"></section>
+    </main>
+
+
+    <footer class="footer">
+        <small>Programa Gobierno de Nuevo León</small>
+    </footer>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
