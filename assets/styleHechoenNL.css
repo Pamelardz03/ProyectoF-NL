@@ -39,7 +39,7 @@ h3 {
 h3.header-negro {
     color: var(--text);
     padding-left: 15px;
-    padding-top :20px;
+    padding-top: 20px;
 }
 
 .linea-naranja {
@@ -116,7 +116,7 @@ footer {
     color: white;
     position: relative;
 
-    position: sticky; 
+    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -157,31 +157,53 @@ footer {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    /* apila elementos verticalmente */
     justify-content: center;
 }
 
 .carrusel-contenedor {
     display: flex;
-    align-items: center;
     position: relative;
     width: 100%;
     margin: auto;
     padding-top: 15px;
 }
 
+.carrusel-item-contendor {
+    position: relative;
+    flex: 0 0 auto;
+    width: 30%;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carrusel-item-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
 .carrusel {
     display: flex;
+    align-items: flex-start;
     overflow-x: hidden;
     scroll-behavior: smooth;
     gap: 10px;
     width: 100%;
 }
 
-
 .carrusel-item {
-    flex: 0 0 auto;
-    width: 30%;
+    width: 100%;
     height: 100%;
     border-radius: 12px;
     cursor: pointer;
@@ -201,6 +223,8 @@ footer {
     border-radius: 50%;
     z-index: 10;
 }
+
+
 
 .ri-arrow-left-line {
     left: 5px;
@@ -232,7 +256,7 @@ ul.Emprendedores-container .container-item {
 
 .textocuadro h3 {
     margin: 0;
-    padding: 0px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
     color: var(--text);
     flex-direction: column;
     justify-content: center;
@@ -243,7 +267,7 @@ ul.Emprendedores-container .container-item {
     font-size: clamp(0.8rem, 2vw, 1rem);
     margin: 5px 0;
     font-weight: light;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 0px 0px 10px;
 }
 
 .categoria {
@@ -262,11 +286,19 @@ ul.Emprendedores-container .container-item {
 .imagencuadro {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    height: 100%;
 }
 
 .imagencuadro img {
     width: 100%;
-    height: 150px;
+    height: 100%;
     border-radius: 35px 0 35px 0;
     object-fit: cover;
+}
+
+.fechacuadro {
+    color: var(--primary);
+    font-weight: bold;
+    text-align: right;
 }
