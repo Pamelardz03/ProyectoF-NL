@@ -162,6 +162,67 @@ footer {
     margin-bottom: 5px;
 }
 
+ul.Emprendedores-container {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.Emprendedores-container .container-item {
+    width: 90%;
+    height: auto;
+    background-color: var(--white);
+    border: 2px solid var(--outline);
+    padding: 0px 0px 0px;
+    margin: 10px 20px;
+    border-radius: 35px 0px 35px 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.textocuadro h3 {
+    margin: 0;
+    padding: 0px 10px 0px 10px;
+    color: var(--text);
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.textocuadro p {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    margin: 5px 0;
+    font-weight: light;
+    padding: 0px 10px 0px 10px;
+}
+
+.imagencuadro {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imagencuadro img {
+    width: 100%;
+    height: 150px;
+    border-radius: 35px 0 35px 0;
+    object-fit: cover;
+}
+
+.categoria {
+    text-decoration: underline;
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0px 10px 0px 10px;
+}
+
+.categoria:hover {
+    color: var(--hover);
+    text-decoration: none;
+}
+
 
 @media (min-width: 1024px){
     .grid-container {
