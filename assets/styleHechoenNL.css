@@ -2,7 +2,7 @@
     --primary: #FF8400;
     --secondary: #FFF5D3;
     --hover: #CC6002;
-    --outline: #E6E6E6;
+    --outline: #CACACA;
     --text: #0E0E0E;
     --muted: #666;
     --white: #FFFFFF;
@@ -19,18 +19,41 @@ body {
     background: var(--white)
 }
 
+h2 {
+    font-family: Poppins, system-ui, Arial, sans-serif;
+    color: var(--white);
+}
+
+h3 {
+    font-family: Poppins, system-ui, Arial, sans-serif;
+    color: var(--white);
+    font-weight: 300;
+}
+
+h3.header-negro {
+    color: var(--text);
+    padding-left: 15px;
+}
+
+.linea-naranja {
+    width: 75%;
+    height: 2px;
+    background-color: var(--primary);
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
 header {
     grid-area: header;
-    background-color: --primary;
+    background-color: var(--primary);
     position: sticky;
     top: 0;
 }
 
 main {
     grid-area: main;
-    background-color: red;
-    padding: 15px;
-    height: 500px;
+    background-color: var(--white);
 }
 
 footer {
@@ -67,7 +90,6 @@ footer {
 }
 
 .grid-container {
-    height: 100vh;
     display: grid;
     gap: 5px;
     grid-template-columns: auto;
@@ -102,4 +124,138 @@ footer {
 
 .ri-search-line {
     font-size: 30px;
+}
+
+/* CSS para pagina principal */
+
+.imagen-contenedor {
+    position: relative;
+    width: 100%;
+}
+
+.FotoIni {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.cuadroIni {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 45%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.carrusel-contenedor {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.carrusel {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.carrusel-item {
+    flex: 0 0 auto;
+    width: 30%;
+    height: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.ri-arrow-left-line,
+.ri-arrow-right-line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.ri-arrow-left-line {
+    left: 5px;
+}
+
+.ri-arrow-right-line {
+    right: 5px;
+}
+
+ul.Emprendedores-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.Emprendedores-container .container-item {
+    width: 85%;
+    height: 150px;
+    background-color: var(--white);
+    border: 2px solid var(--outline);
+    padding: 0px;
+    border-radius: 35px 0 35px 0;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.textocuadro h3 {
+    margin: 0;
+    padding: 10px;
+    color: var(--text);
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.textocuadro p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    font-weight: light;
+    padding: 0px 10px 0px 10px;
+}
+
+.categoria {
+    text-decoration: underline;
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0px 10px 0px 10px;
+}
+
+.categoria:hover {
+    color: var(--hover);
+    text-decoration: none;
+}
+
+.imagencuadro {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imagencuadro img {
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    border-radius: 35px 0 35px 0;
+    object-fit: cover;
 }
