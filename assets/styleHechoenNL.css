@@ -239,24 +239,23 @@ ul.Emprendedores-container {
 }
 
 ul.Emprendedores-container .container-item {
+    position: relative;
     width: 90%;
     height: auto;
     background-color: var(--white);
     border: 2px solid var(--outline);
-    padding: 0px;
+    padding: 0px 0px 0px;
     margin: 10px 20px;
     border-radius: 35px 0px 35px 0px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
     align-items: center;
-    position: relative;
 }
 
 ul.Emprendedores-container .cuadroprecio {
     position: absolute;
     bottom: 0px;
-    /* ajusta según lo necesites */
     left: 65%;
     transform: translateX(-50%);
     width: 70px;
@@ -319,6 +318,7 @@ ul.Emprendedores-container .cuadroprecio:hover {
 
 .imagencuadro img {
     width: 100%;
+    min-height: 150px;
     height: 100%;
     border-radius: 35px 0 35px 0;
     object-fit: cover;
@@ -328,6 +328,43 @@ ul.Emprendedores-container .cuadroprecio:hover {
     color: var(--primary);
     font-weight: bold;
     text-align: right;
+}
+
+
+@media (min-width: 1024px){
+
+    main {
+        grid-area: main;
+        display: flex;
+        width: 60%;
+        background-color: var(--white);
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: flex;  /* Mostrar el menú siempre */
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .menu li a {
+        color: var(--white);
+        padding: 0 12px;
+    }
+
+    .ri-menu-line {
+        display: none;  /* Ocultar ícono de hamburguesa */
+    }
+
+    #banner {
+        height: 400px; /* Banner más alto en escritorio */
+    }
+
+    .info {
+        font-size: 16px;
+    }
 }
 
 /* CSS para lista emprendedores */

@@ -156,10 +156,17 @@ footer {
 }
 
 #bread-crumbs {
-    font-size: 14px;
-    margin-left: 20px; 
-    margin-top: 5px;
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    color: var(--hover);
+}
+
+#bread-crumbs .ri-filter-2-fill {
+    margin-left: auto;
+    color: var(--primary);
+    font-size: 25px;
 }
 
 ul.Emprendedores-container {
