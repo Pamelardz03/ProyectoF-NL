@@ -33,7 +33,7 @@ body {
 
 header {
     grid-area: header;
-    background-color: var(--primary); /* ← corregido */
+    background-color: var(--primary);
     position: sticky;
     top: 0;
 }
@@ -109,7 +109,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-image: url('laspalomiras.jpg');
+    background-image: url('/ProyectoF-NL/images/laspalomiras.jpg');
     background-size: cover;
     background-position:  center;
     height: 250px;
