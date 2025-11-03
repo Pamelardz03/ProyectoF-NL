@@ -2,10 +2,13 @@
     --primary: #FF8400;
     --secondary: #FFF5D3;
     --hover: #CC6002;
+    --hoversecundario: #FFB537;
     --outline: #CACACA;
     --text: #0E0E0E;
-    --muted: #666;
     --white: #FFFFFF;
+    --muted: #666;
+    --exito: #00bc70;
+    --error: #ff4438;
     --radius: 12px;
     --gap: 12px;
 }
@@ -113,9 +116,8 @@ footer {
     justify-content: space-between;
     border-bottom: 1px solid var(--outline);
     background: var(--primary);
-    color: white;
+    color: var(--white);
     position: relative;
-
     position: sticky;
     top: 0;
     z-index: 100;
@@ -320,7 +322,7 @@ ul.Emprendedores-container .cuadroprecio:hover {
     width: 100%;
     min-height: 150px;
     height: 100%;
-    border-radius: 35px 0 35px 0;
+    border-radius: 30px 0 30px 0;
     object-fit: cover;
 }
 
@@ -331,40 +333,107 @@ ul.Emprendedores-container .cuadroprecio:hover {
 }
 
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
     main {
         grid-area: main;
         display: flex;
-        width: 60%;
+        width: 80%;
         background-color: var(--white);
         flex-direction: column;
         margin: 0 auto;
     }
 
     .menu {
-        display: flex;  /* Mostrar el menú siempre */
+        display: flex;
         position: static;
         width: auto;
         background: none;
+        height: 100%;
     }
 
     .menu li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
         color: var(--white);
         padding: 0 12px;
+        text-decoration: none;
     }
 
     .ri-menu-line {
-        display: none;  /* Ocultar ícono de hamburguesa */
+        display: none;
     }
 
     #banner {
-        height: 400px; /* Banner más alto en escritorio */
+        height: 400px;
     }
 
     .info {
-        font-size: 16px;
+        font-size: 18px;
     }
+
+    .imagen-contenedor {
+        position: relative;
+        width: 100%;
+        height: 87vh;
+        overflow: hidden;
+    }
+
+    .cuadroback {
+        background-color: var(--primary);
+        width: 98.8vw;
+        height: 20vw;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .FotoIni {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .cuadroIni {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 70%;
+        height: 40%;
+        position: absolute;
+        top: 45%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .h3-desktop {
+        font-size: 2rem;
+    }
+
+    .carrusel-item-contendor {
+        height: 170px;
+    }
+
+    .linea-naranja {
+        width: 80vw;
+        height: 4px;
+    }
+
+    ul.Emprendedores-container .cuadroprecio {
+        width: 120px;
+        height: 70px;
+    }
+
+    .textocuadro p {
+        margin: 5px 0px 30px 0px;
+    }
+
 }
 
 /* CSS para lista emprendedores */
@@ -424,7 +493,7 @@ ul.Emprendedores-container .cuadroprecio:hover {
     padding: 15px;
     column-count: 2;
     margin: 0px auto;
-    column-gap: 10px; 
+    column-gap: 10px;
 }
 
 .galeriacompleta .galeria-item {
