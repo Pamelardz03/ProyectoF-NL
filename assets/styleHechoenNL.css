@@ -224,8 +224,6 @@ footer {
     z-index: 10;
 }
 
-
-
 .ri-arrow-left-line {
     left: 5px;
 }
@@ -245,13 +243,26 @@ ul.Emprendedores-container .container-item {
     height: auto;
     background-color: var(--white);
     border: 2px solid var(--outline);
-    padding: 0px 0px 0px;
+    padding: 0px;
     margin: 10px 20px;
     border-radius: 35px 0px 35px 0px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
     align-items: center;
+     position: relative;
+}
+
+ul.Emprendedores-container .cuadroprecio {
+    position: absolute;
+    bottom: 0px; /* ajusta según lo necesites */
+    left: 65%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 40px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--primary);
+    z-index: 10;
 }
 
 .textocuadro h3 {
@@ -275,7 +286,7 @@ ul.Emprendedores-container .container-item {
     color: var(--primary);
     font-weight: bold;
     cursor: pointer;
-    padding: 0px 10px 0px 10px;
+    padding:0px 10px 0px 10px;
 }
 
 .categoria:hover {
