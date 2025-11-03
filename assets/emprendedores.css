@@ -263,6 +263,8 @@ ul.Emprendedores-container .container-item {
         width: auto;
         background: none; 
 
+    }
+
     .menu li a {
         color: var(--white);
         padding: 0 12px;
@@ -294,8 +296,4 @@ ul.Emprendedores-container .container-item {
     #bread-crumbs {
         font-size: 16px;
     }
-}
-
-
-
 }
