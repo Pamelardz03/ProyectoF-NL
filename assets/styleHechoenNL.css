@@ -45,6 +45,15 @@ h3.header-negro {
     padding-top: 20px;
 }
 
+h4 {
+    font-family: Poppins, system-ui, Arial, sans-serif;
+    color: var(--white);
+    font-weight: 200;
+    font-size: .9rem;
+    margin: 0px;
+    padding: 0px;
+}
+
 .linea-naranja {
     width: 75%;
     height: 2px;
@@ -125,16 +134,19 @@ footer {
 
 .ri-menu-line {
     font-size: 30px;
+    cursor: pointer;
 }
 
 .LogoNL {
-    width: 90px;
+    width: 100px;
     height: auto;
     text-align: center;
+    cursor: pointer;
 }
 
 .ri-search-line {
     font-size: 30px;
+    cursor: pointer;
 }
 
 /* CSS para pagina principal */
@@ -238,6 +250,9 @@ ul.Emprendedores-container {
     list-style: none;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 ul.Emprendedores-container .container-item {
@@ -246,8 +261,8 @@ ul.Emprendedores-container .container-item {
     height: auto;
     background-color: var(--white);
     border: 2px solid var(--outline);
-    padding: 0px 0px 0px;
-    margin: 10px 20px;
+    padding: 0px;
+    margin: 10px 0px;
     border-radius: 35px 0px 35px 0px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -268,6 +283,11 @@ ul.Emprendedores-container .cuadroprecio {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+ul.Emprendedores-container .cuadroprecio.nohover:hover {
+    background-color: var(--primary);
+    cursor: default;
 }
 
 
@@ -332,6 +352,80 @@ ul.Emprendedores-container .cuadroprecio:hover {
     text-align: right;
 }
 
+/* CSS para lista emprendedores */
+#bread-crumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    color: var(--hover);
+}
+
+#bread-crumbs .ri-filter-2-fill {
+    margin-left: auto;
+    color: var(--primary);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* CSS para categorias */
+.carrusel-categorias {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 15px;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.carrusel-categorias::-webkit-scrollbar {
+    display: none;
+}
+
+.carrusel-item-categorias {
+    flex: 0 0 auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.carrusel-item-categorias img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-item-categorias:hover .carrusel-item-text {
+    color: var(--primary);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* CSS para galeria*/
+
+.galeriacompleta {
+    padding: 15px;
+    column-count: 2;
+    margin: 0px auto;
+    column-gap: 10px;
+}
+
+.galeriacompleta .galeria-item {
+    overflow: hidden;
+    border-radius: 35px 0px 35px 0px;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.galeriacompleta .galeria-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
 
 @media (min-width: 1024px) {
 
@@ -364,6 +458,11 @@ ul.Emprendedores-container .cuadroprecio:hover {
 
     .ri-menu-line {
         display: none;
+    }
+
+    h4 {
+        font-weight: 300;
+        font-size: 1.5rem;
     }
 
     #banner {
@@ -431,81 +530,19 @@ ul.Emprendedores-container .cuadroprecio:hover {
     }
 
     .textocuadro p {
-        margin: 5px 0px 30px 0px;
+        margin: 5px 35px 30px 0px;
     }
 
-}
+    .galeriacompleta {
+        column-count: 4;
+    }
 
-/* CSS para lista emprendedores */
-#bread-crumbs {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px;
-    color: var(--hover);
-}
+    .textocuadro {
+        padding: 15px 60px 15px 15px;
+    }
 
-#bread-crumbs .ri-filter-2-fill {
-    margin-left: auto;
-    color: var(--primary);
-    font-size: 25px;
-}
-
-/* CSS para categorias */
-.carrusel-categorias {
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    padding: 15px;
-    gap: 15px;
-    flex-wrap: nowrap;
-}
-
-.carrusel-categorias::-webkit-scrollbar {
-    display: none;
-}
-
-.carrusel-item-categorias {
-    flex: 0 0 auto;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-}
-
-.carrusel-item-categorias img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carrusel-item-categorias:hover .carrusel-item-text {
-    color: var(--primary);
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* CSS para galeria*/
-
-.galeriacompleta {
-    padding: 15px;
-    column-count: 2;
-    margin: 0px auto;
-    column-gap: 10px;
-}
-
-.galeriacompleta .galeria-item {
-    overflow: hidden;
-    border-radius: 35px 0px 35px 0px;
-    margin-bottom: 10px;
-    break-inside: avoid;
-}
-
-.galeriacompleta .galeria-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+    .ri-calendar-event-line {
+        font-size: 40px;
+        cursor: pointer;
+    }
 }

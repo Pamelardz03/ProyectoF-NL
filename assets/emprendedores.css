@@ -24,7 +24,7 @@ body {
     gap: 5px;
     grid-template-columns: auto;
     grid-template-rows: 100px auto 100px;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
         "footer"
@@ -92,16 +92,19 @@ footer {
 
 .ri-menu-line {
     font-size: 30px;
+    cursor: pointer;
 }
 
 .LogoNL {
     width: 90px;
     height: auto;
     text-align: center;
+    cursor: pointer;
 }
 
 .ri-search-line {
     font-size: 30px;
+    cursor: pointer;
 }
 
 
@@ -111,7 +114,7 @@ footer {
     align-items: flex-end;
     background-image: url('/ProyectoF-NL/images/laspalomiras.jpg');
     background-size: cover;
-    background-position:  center;
+    background-position: center;
     height: 250px;
     border-bottom: 5px solid #FFB537;
     border-top: 5px solid #FFB537;
@@ -121,8 +124,8 @@ footer {
 #info-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;   
-    align-items: center;       
+    justify-content: center;
+    align-items: center;
     font-size: 40px;
     background-color: rgba(0, 0, 0, 0.65);
     height: 65%;
@@ -140,10 +143,10 @@ footer {
 }
 
 .titulo {
-    margin-left: 20px; 
-    margin-top: 10px; 
-    margin-bottom: 10px; 
-    padding-bottom: 10px; 
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     border-bottom: 2px solid #FFB537;
 }
 
@@ -168,6 +171,7 @@ footer {
     margin-left: auto;
     color: var(--primary);
     font-size: 25px;
+    cursor: pointer;
 }
 
 ul.Emprendedores-container {
@@ -231,47 +235,54 @@ ul.Emprendedores-container .container-item {
     text-decoration: none;
 }
 
+.ri-instagram-fill,
+.ri-facebook-circle-fill,
+.ri-tiktok-fill,
+.ri-whatsapp-fill {
+    cursor: pointer;
+}
 
-@media (min-width: 1024px){
-    .grid-container {
-        grid-template-columns: 200px auto;
-        grid-template-areas:
-            "header header"
-            "main main"
-            "footer footer";
-    }
+@media (min-width: 1024px) {
 
     main {
         grid-area: main;
         display: flex;
-        width: 60%;
+        width: 80%;
         background-color: var(--white);
         flex-direction: column;
         margin: 0 auto;
     }
 
     .menu {
-        display: flex;  /* Mostrar el menú siempre */
+        display: flex;
         position: static;
         width: auto;
         background: none;
-    }
+        display: flex;
+        position: static;
+        width: auto;
+        background: none; 
 
     .menu li a {
         color: var(--white);
         padding: 0 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-decoration: none;
     }
 
     .ri-menu-line {
-        display: none;  /* Ocultar ícono de hamburguesa */
+        display: none;
     }
 
     #banner {
-        height: 400px; /* Banner más alto en escritorio */
+        height: 400px;
     }
 
     .info {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     #contacto {
@@ -281,7 +292,8 @@ ul.Emprendedores-container .container-item {
     }
 
     #bread-crumbs {
-    font-size: 16px;
+        font-size: 16px;
+    }
 }
 
 
