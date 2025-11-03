@@ -263,6 +263,21 @@ ul.Emprendedores-container .cuadroprecio {
     border-radius: 15px 15px 0px 0px;
     background-color: var(--primary);
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ul.Emprendedores-container .cuadroprecio:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+.ri-calendar-event-line {
+    color: var(--white);
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .textocuadro h3 {
@@ -278,7 +293,7 @@ ul.Emprendedores-container .cuadroprecio {
     font-size: clamp(0.8rem, 2vw, 1rem);
     margin: 5px 0;
     font-weight: light;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 30px 0px 10px;
 }
 
 .categoria {
