@@ -250,12 +250,13 @@ ul.Emprendedores-container .container-item {
     grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
     align-items: center;
-     position: relative;
+    position: relative;
 }
 
 ul.Emprendedores-container .cuadroprecio {
     position: absolute;
-    bottom: 0px; /* ajusta según lo necesites */
+    bottom: 0px;
+    /* ajusta según lo necesites */
     left: 65%;
     transform: translateX(-50%);
     width: 70px;
@@ -301,7 +302,7 @@ ul.Emprendedores-container .cuadroprecio:hover {
     color: var(--primary);
     font-weight: bold;
     cursor: pointer;
-    padding:0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 .categoria:hover {
@@ -358,6 +359,7 @@ ul.Emprendedores-container .cuadroprecio:hover {
 .carrusel-categorias::-webkit-scrollbar {
     display: none;
 }
+
 .carrusel-item-categorias {
     flex: 0 0 auto;
     width: 90px;
@@ -377,4 +379,27 @@ ul.Emprendedores-container .cuadroprecio:hover {
 .carrusel-item-categorias:hover .carrusel-item-text {
     color: var(--primary);
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* CSS para galeria*/
+
+.galeriacompleta {
+    padding: 15px;
+    column-count: 2;
+    margin: 0px auto;
+    column-gap: 10px; 
+}
+
+.galeriacompleta .galeria-item {
+    overflow: hidden;
+    border-radius: 35px 0px 35px 0px;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.galeriacompleta .galeria-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
