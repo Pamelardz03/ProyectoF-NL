@@ -113,7 +113,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-image: url('../images/palomiras.jpg');
+    background-image: url('laspalomiras.jpg');
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -162,9 +162,10 @@ footer {
 #bread-crumbs {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px;
     color: var(--hover);
+    font-size: 12px;
+    margin-bottom: 5px;
+
 }
 
 #bread-crumbs .ri-filter-2-fill {
@@ -286,4 +287,17 @@ ul.Emprendedores-container .container-item {
     .info {
         font-size: 18px;
     }
+
+    #contacto {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #bread-crumbs {
+    font-size: 16px;
+}
+
+
+
 }
