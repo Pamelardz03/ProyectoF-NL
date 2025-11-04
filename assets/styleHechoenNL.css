@@ -290,7 +290,9 @@ ul.Emprendedores-container {
 ul.Emprendedores-container .container-item {
     position: relative;
     width: 90%;
-    height: auto;
+    height: 150px;
+    min-height: 100px;
+    max-height: 150px;
     background-color: var(--white);
     border: 2px solid var(--outline);
     padding: 0px;
@@ -301,6 +303,7 @@ ul.Emprendedores-container .container-item {
     grid-gap: 10px;
     align-items: center;
     cursor: pointer;
+    overflow: hidden;
 }
 
 ul.Emprendedores-container .container-item.nohover:hover {
@@ -341,11 +344,13 @@ ul.Emprendedores-container .cuadroprecio:hover {
 
 .textocuadro h3 {
     margin: 0;
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 10px 15px;
     color: var(--text);
     flex-direction: column;
     justify-content: center;
     font-weight: bold;
+    overflow: hidden;
+
 }
 
 .textocuadro p {
@@ -353,6 +358,12 @@ ul.Emprendedores-container .cuadroprecio:hover {
     margin: 5px 0;
     font-weight: light;
     padding: 0px 30px 0px 10px;
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    line-height: 1.2;
 }
 
 .categoria {
@@ -373,14 +384,15 @@ ul.Emprendedores-container .cuadroprecio:hover {
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    overflow: hidden;
 }
 
 .imagencuadro img {
     width: 100%;
-    min-height: 150px;
     height: 100%;
     border-radius: 30px 0 30px 0;
     object-fit: cover;
+    display: block;
 }
 
 .fechacuadro {
@@ -574,7 +586,8 @@ a.enlace-item {
     }
 
     .textocuadro p {
-        margin: 5px 35px 30px 0px;
+        font-size: 1rem;
+        -webkit-line-clamp: 5;
     }
 
     .galeriacompleta {
@@ -588,5 +601,10 @@ a.enlace-item {
     .ri-calendar-event-line {
         font-size: 40px;
         cursor: pointer;
+    }
+
+    ul.Emprendedores-container .container-item { 
+        height: 200px;
+        max-height: 200px;
     }
 }
