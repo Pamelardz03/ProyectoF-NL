@@ -476,7 +476,7 @@ a.enlace-item {
     main {
         grid-area: main;
         display: flex;
-        width: 80%;
+        width: 65%;
         background-color: var(--white);
         flex-direction: column;
         margin: 0 auto;
