@@ -25,6 +25,18 @@
     border-top: 5px solid #FFB537;
 }
 
+#banner-producto {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url('/ProyectoF-NL/images/laspalomiras.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-bottom: 5px solid #FFB537;
+    border-top: 5px solid #FFB537;
+}
+
 #info-container {
     display: flex;
     flex-direction: column;
@@ -405,6 +417,7 @@ ul.Emprendedores-container .cuadroprecio:hover {
 #bread-crumbs {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
     padding: 10px;
     color: var(--hover);
