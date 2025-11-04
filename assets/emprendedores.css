@@ -246,6 +246,12 @@ ul.Emprendedores-container .container-item.nohover:hover {
     cursor: pointer;
 }
 
+a.enlace-item {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 @media (min-width: 1024px) {
 
     main {

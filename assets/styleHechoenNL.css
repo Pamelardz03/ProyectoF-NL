@@ -464,6 +464,13 @@ ul.Emprendedores-container .cuadroprecio:hover {
     object-fit: cover;
 }
 
+a.enlace-item {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+  cursor: pointer; 
+}
+
 @media (min-width: 1024px) {
 
     main {
