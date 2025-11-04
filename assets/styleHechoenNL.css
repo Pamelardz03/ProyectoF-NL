@@ -483,6 +483,62 @@ a.enlace-item {
   cursor: pointer; 
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    main {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: none; /* aún usará el menú hamburguesa */
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    #banner {
+        height: 300px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    .imagen-contenedor {
+        height: 70vh;
+    }
+
+    .cuadroback {
+        width: 98vw;
+        height: 25vw;
+        top: 55%;
+    }
+
+    .cuadroIni {
+        width: 80%;
+        height: 45%;
+    }
+
+    .carrusel-item-contendor {
+        height: 150px;
+    }
+
+    ul.Emprendedores-container .container-item { 
+        height: 180px;
+    }
+
+    .textocuadro p {
+        font-size: 0.9rem;
+        -webkit-line-clamp: 4;
+    }
+
+    .galeriacompleta {
+        column-count: 3;
+    }
+}
+
 @media (min-width: 1024px) {
 
     main {
@@ -576,7 +632,7 @@ a.enlace-item {
     }
 
     .linea-naranja {
-        width: 80vw;
+        width: 65%;
         height: 4px;
     }
 

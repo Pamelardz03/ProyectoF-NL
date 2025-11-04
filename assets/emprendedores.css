@@ -162,8 +162,11 @@ footer {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
     color: var(--hover);
+    font-size: 13px;
 }
 
 #bread-crumbs .ri-filter-2-fill {
@@ -200,7 +203,7 @@ ul.Emprendedores-container .container-item.nohover:hover {
 
 .textocuadro h3 {
     margin: 0;
-    padding: 0px 10px 0px 10px;
+    padding: 5px 10px 0px 20px;
     color: var(--text);
     flex-direction: column;
     justify-content: center;
@@ -211,7 +214,7 @@ ul.Emprendedores-container .container-item.nohover:hover {
     font-size: clamp(0.8rem, 2vw, 1rem);
     margin: 5px 0;
     font-weight: light;
-    padding: 0px 10px 0px 10px;
+    padding: 5px 10px 0px 20px;
 }
 
 .imagencuadro {
@@ -231,7 +234,10 @@ ul.Emprendedores-container .container-item.nohover:hover {
     color: var(--primary);
     font-weight: bold;
     cursor: pointer;
-    padding: 0px 10px 0px 10px;
+}
+
+.container-item a{
+    padding-left: 20px;
 }
 
 .categoria:hover {
@@ -250,6 +256,71 @@ a.enlace-item {
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #banner {
+        height: 300px;
+    }
+
+    #info-container {
+        font-size: 48px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    ul.Emprendedores-container .container-item {
+        width: 85%;
+        margin: 15px auto;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .imagencuadro img {
+        height: 180px;
+        border-radius: 35px 0 35px 0;
+        object-fit: cover;
+    }
+
+    .textocuadro h3 {
+        font-size: 1.1rem;
+    }
+
+    .textocuadro p {
+        font-size: 1rem;
+    }
+
+    #bread-crumbs {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+
+    #bread-crumbs .ri-filter-2-fill {
+        font-size: 28px;
+    }
+
+    #redes {
+        font-size: 45px;
+        gap: 25px;
+    }
+
+    #contacto {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .ri-menu-line,
+    .ri-search-line {
+        font-size: 35px;
+    }
 }
 
 @media (min-width: 1024px) {
