@@ -25,6 +25,25 @@
     border-top: 5px solid #FFB537;
 }
 
+#info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 65%;
+    width: 100%;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 0;
+    font-size: 14px;
+}
 
 body {
     margin: 0;
