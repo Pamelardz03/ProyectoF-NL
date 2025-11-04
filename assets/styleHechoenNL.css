@@ -13,6 +13,19 @@
     --gap: 12px;
 }
 
+#banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url('/ProyectoF-NL/images/laspalomiras.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-bottom: 5px solid #FFB537;
+    border-top: 5px solid #FFB537;
+}
+
+
 body {
     margin: 0;
     background-color: #ffffff;
