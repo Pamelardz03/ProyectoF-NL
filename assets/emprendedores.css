@@ -112,13 +112,19 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-image: url('/ProyectoF-NL/images/laspalomiras.jpg');
     background-size: cover;
     background-position: center;
     height: 250px;
     border-bottom: 5px solid #FFB537;
     border-top: 5px solid #FFB537;
+}
 
+.banner-palomiras {
+    background-image: url('/ProyectoF-NL/images/laspalomiras.jpg');
+}
+
+.banner-spread {
+    background-image: url('/ProyectoF-NL/images/spread1.png');
 }
 
 #info-container {
