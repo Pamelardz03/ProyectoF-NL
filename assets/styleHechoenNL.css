@@ -17,7 +17,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-image: url('/ProyectoF-NL/images/fotp1.jpg');
+    background-image: url("../images/fotp1.jpg");
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -25,11 +25,23 @@
     border-top: 5px solid #FFB537;
 }
 
-#banner-producto {
+#banner-palomiras {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-image: url('/ProyectoF-NL/images/laspalomiras.jpg');
+    background-image: url("../images/laspalomiras.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-bottom: 5px solid #FFB537;
+    border-top: 5px solid #FFB537;
+}
+
+#banner-spread {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("../images/spread2.png");
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -318,6 +330,12 @@ ul.Emprendedores-container .container-item {
     overflow: hidden;
 }
 
+ul.Emprendedores-container .container-item.container-noticia {
+    height: 400px;
+    min-height: 150px;
+    max-height: 200px;
+}
+
 ul.Emprendedores-container .container-item.nohover:hover {
     cursor: default;
 }
@@ -341,7 +359,6 @@ ul.Emprendedores-container .cuadroprecio.nohover:hover {
     background-color: var(--primary);
     cursor: default;
 }
-
 
 ul.Emprendedores-container .cuadroprecio:hover {
     background-color: var(--hover);
@@ -370,7 +387,7 @@ ul.Emprendedores-container .cuadroprecio:hover {
     margin: 5px 0;
     font-weight: light;
     padding: 0px 30px 0px 10px;
-    overflow: hidden; 
+    overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -490,10 +507,10 @@ ul.Emprendedores-container .cuadroprecio:hover {
 }
 
 a.enlace-item {
-  text-decoration: none;
-  color: inherit;
-  display: contents;
-  cursor: pointer; 
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+    cursor: pointer;
 }
 
 @media (min-width: 600px) and (max-width: 1023px) {
@@ -504,7 +521,8 @@ a.enlace-item {
     }
 
     .menu {
-        display: none; /* aún usará el menú hamburguesa */
+        display: none;
+        /* aún usará el menú hamburguesa */
     }
 
     h4 {
@@ -538,7 +556,7 @@ a.enlace-item {
         height: 150px;
     }
 
-    ul.Emprendedores-container .container-item { 
+    ul.Emprendedores-container .container-item {
         height: 180px;
     }
 
@@ -672,8 +690,14 @@ a.enlace-item {
         cursor: pointer;
     }
 
-    ul.Emprendedores-container .container-item { 
+    ul.Emprendedores-container .container-item {
         height: 200px;
         max-height: 200px;
+    }
+
+    ul.Emprendedores-container .container-item.container-noticia {
+        height: 300px;
+        min-height: 150px;
+        max-height: 300px;
     }
 }

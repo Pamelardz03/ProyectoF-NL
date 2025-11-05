@@ -120,11 +120,11 @@ footer {
 }
 
 .banner-palomiras {
-    background-image: url('/ProyectoF-NL/images/laspalomiras.jpg');
+    background-image: url("../images/laspalomiras.jpg");
 }
 
 .banner-spread {
-    background-image: url('/ProyectoF-NL/images/spread1.png');
+    background-image: url("../images/spread1.png");
 }
 
 #info-container {
